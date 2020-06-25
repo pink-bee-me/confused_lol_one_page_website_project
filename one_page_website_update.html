@@ -4,12 +4,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>The Stellar Symposim</title>
-	<link ref="stylesheets" href="./"
-</head>
+	<link rel="stylesheet" href="./styles_one_page_project.css">
+	<script defer src="JavaScript_one-page_project.js"></script>
+		  </head>
 
-<body>
+		  <body>
 	<!-- Navigation Area -->
-	<div>
+	<section>
 		<div>
 			<ul>
 				<a href="#home" id="link" <li>HOME</li></a><br>
@@ -20,24 +21,17 @@
 				<a href="#contact" id="link" <li>Contact Us</li></a>
 			</ul>
 		</div>
-	</div>
-
-
-	<!-- End Navigation Area -->
-
+	</section>
 	<!-- HOME -->
 	<section>
 		<div id="home">
 			<h1>Introducing The Stellar Symposium...<br></h1>
 			<p><em>the social institution for our time</em></p>
-
-
+				<img src="./Images/thumbs/thumbnail_11.jpg" alt="Stellar Symposium at Night">
 		</div>
-		<img src="./Images/thumbs/thumbnail_11.jpg" alt="Stellar Symposium at Night>
-		</section>
-	<!-- End Home -->
+	</section>
 	
-	<!-- About Us -->
+	<!--- About Us --->
 	<section>
 	<div id=" about">
 		<h2>About Us...</h2>
@@ -118,13 +112,30 @@
 
 			</div>
 	</section>
-	<!-- End About Us -->
-
-
 	<!-- Photo Gallery -->
-	<section>
+	<section id="gallery">
+		<div class="grid">
+			<img src="./Images/thumbs/thumbnail_1.png">
+			<img src="./Images/thumbs/thumbnail_2.png">
+			<img src="./Images/thumbs/thumbnail_3.png">
+			<img src="./Images/thumbs/thumbnail_4ab.png">
+			<img src="./Images/thumbs/thumbnail_5.png">
+			<img src="./Images/thumbs/thumbnail_6.png">
+			<img src="./Images/thumbs/thumbnail_7.png">
+			<img src="./Images/thumbs/thumbnail_8a.png">
+			<img src="./Images/thumbs/thumbnail_9ab.png">
+		</div>
+	</section>		
 
-		<div id="gallery">
+
+
+
+
+
+
+
+
+	
 			<div>
 				<h1>Check Out The PHOTO GALLERY !!!</h1>
 			</div>
@@ -134,117 +145,94 @@
 					<p><i>This collection showcases the amazing sights NASA has discovered just beyond our frontier...go
 							ahead, take a peek!</i></p>
 				</h2>
-				<div class="row">
-					<div class Column="column">
-						<!-- PHOTO-CONTAINER 1 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./Images/thumbs/thumbnail_1.png" alt="Veil Nebula Supernova Remnant"
-									onclick="openModal();currentSlide(1)" class="hover-shadow">
-								<div class="photo-overlay">
-									<h3 class="white-head">Click To Enlarge</h3>
-									<p>Introducing The Stellar Symposium...the social institution of today<br>
-										We offer: Noon and Evening Symposiums.<br>
-										Feature Exhibit: The Stellar Collection by NASA<br>
-										Reservation Only --- Private Event Booking Available.
-									</p>
-								</div>
-							</div>
+				<div class="row1">
+					<div class="column1">
+					<!-- PHOTO-CONTAINER 1 -->
+					<div class="photo-container">
+						<img src="./Images/thumbs/thumbnail_1.png" alt="Veil Nebula Supernova Remnant"
+							 onclick="openModal();currentSlide(1)" class="hover-shadow">
+						<div class="photo-overlay">
+							<h3 class="white-head">Click To Enlarge</h3>
+							<p>Introducing The Stellar Symposium...the social institution of today<br>
+								We offer: Noon and Evening Symposiums.<br>
+								Feature Exhibit: The Stellar Collection by NASA<br>
+								Reservation Only --- Private Event Booking Available.
+							</p>
 						</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 1 -->
+					</div>
+					</div>
+
 				<!-- PHOTO-CONTAINER 2 -->
-				<div class="row">
-					<div class Column="column">
-						<div>
-							<div>
-								<img src="./Images/thumbs/thumbnail_2.png"
-									alt="Arp 273 (part of a galaxy, 300,000,000 light years away)"
-									onclick="openModal();currentSlide(2)" class="hover-shadow">
-
-								<div>
-									<h3>Click To Enlarge</h3>
-									<p>Introducing The Stellar Symposium...the social institution of today<br>
-										We offer: Noon and Evening Symposiums.<br>
-										Feature Exhibit: The Stellar Collection by NASA<br>
-										Reservation Only --- Private Event Booking Available.
-									</p>
-								</div>
-							</div>
-						</div>
+				<div class="column2">
+					<div class="photo-container">
+						<img src="./Images/thumbs/thumbnail_2.png"
+							 alt="Arp 273 (part of a galaxy, 300,000,000 light years away)"
+							 onclick="openModal();currentSlide(2)" class="hover-shadow">
+					</div>
+					<div class=text-overlay>
+						<h3>Click To Enlarge</h3>
+						<p>Introducing The Stellar Symposium...the social institution of today<br>
+							We offer: Noon and Evening Symposiums.<br>
+							Feature Exhibit: The Stellar Collection by NASA<br>
+							Reservation Only --- Private Event Booking Available.
+						</p>
+					</div>
 				</div>
-				<!-- END PHOTO-CONTAINER 2 -->
-
 				<!-- PHOTO-CONTAINER 3 -->
-				<div class="row">
-					<div class Column="column">
-						<div>
-							<div>
-								<img src="./Images/thumbs/thumbnail_3.png" alt="The Cone Nebula"
-									onclick="openModal();currentSlide(3)" class="hover-shadow">
-								<div>
-									<h3>Click To Enlarge</h3>
-									<p>Introducing The Stellar Symposium...the social institution of today<br>
-										We offer: Noon and Evening Symposiums.<br>
-										Feature Exhibit: The Stellar Collection by NASA<br>
-										Reservation Only --- Private Event Booking Available.
-									</p>
-								</div>
+				<div class="column3">
+					<div class="photo-container">
+						<img src="./Images/thumbs/thumbnail_3.png" alt="The Cone Nebula"
+							 onclick="openModal();currentSlide(3)" class="hover-shadow">
+					</div>
+							<div class="text-overlay">
+							<h3>Click To Enlarge</h3>
+							<p>Introducing The Stellar Symposium...the social institution of today<br>
+								We offer: Noon and Evening Symposiums.<br>
+								Feature Exhibit: The Stellar Collection by NASA<br>
+								Reservation Only --- Private Event Booking Available.
+							</p>
+						</div>
+						</div>
+			</div>
+	<!-- PHOTO-CONTAINER 4 -->
+		<div class="row2">
+			<div class="column1">
+					<div class="photo-container">
+						<img src="./Images/thumbs/thumbnail_4.png" alt="Pillars of Creation, Eagle Nebula"
+							 onclick="openModal();currentSlide(4)" class="hover-shadow">
+					</div>
+					<div class="text-overlay">
+					<h3>Click To Enlarge</h3>
+							<p>Introducing The Stellar Symposium...the social institution of today<br>
+								We offer: Noon and Evening Symposiums.<br>
+								Feature Exhibit: The Stellar Collection by NASA<br>
+								Reservation Only --- Private Event Booking Available.
+							</p>
+						</div>
+				
+					</div>
+		<!-- PHOTO-CONTAINER 5 -->
+				<div class="column2">
+					<div class="photo-container">
+							<img src="./Images/thumbs/thumbnail_5.png" alt="The Ring Nebula"
+								 onclick="openModal();currentSlide(5)" class="hover-shadow">
+					</div>
+					<div class="text-overlay">
+								<h3>Click To Enlarge</h3>
+								<p>Introducing The Stellar Symposium...the social institution of today<br>
+									We offer: Noon and Evening Symposiums.<br>
+									Feature Exhibit: The Stellar Collection by NASA<br>
+									Reservation Only --- Private Event Booking Available.
+								</p>
 							</div>
 						</div>
-					</div>
-				<!-- END PHOTO-CONTAINER 3 -->
-
-				<!-- PHOTO-CONTAINER 4 -->
-				<div class="row">
-					<div class Column="column">
-						<div>
-							<div>
-								<img src="./Images/thumbs/thumbnail_4.png" alt="Pillars of Creation, Eagle Nebula"
-									onclick="openModal();currentSlide(4)" class="hover-shadow">
-								<div>
-									<h3>Click To Enlarge</h3>
-									<p>Introducing The Stellar Symposium...the social institution of today<br>
-										We offer: Noon and Evening Symposiums.<br>
-										Feature Exhibit: The Stellar Collection by NASA<br>
-										Reservation Only --- Private Event Booking Available.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				<!-- END PHOTO-CONTAINER 4 -->
-
-				<!-- PHOTO-CONTAINER 5 -->
-				<div class="row">
-					<div class Column="column">
-						<div>
-							<div>
-								<img src="./Images/thumbs/thumbnail_5.png" alt="The Ring Nebula"
-									onclick="openModal();currentSlide(5)" class="hover-shadow">
-								<div>
-									<h3>Click To Enlarge</h3>
-									<p>Introducing The Stellar Symposium...the social institution of today<br>
-										We offer: Noon and Evening Symposiums.<br>
-										Feature Exhibit: The Stellar Collection by NASA<br>
-										Reservation Only --- Private Event Booking Available.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-			
-
-				<!-- END PHOTO-CONTAINER 5 -->
-
-				<!-- PHOTO-CONTAINER 6 -->
-				<div class="row">
-					<div class Column="column">
-						<div>
-							<div>
+		<!-- PHOTO-CONTAINER 6 -->
+			<div class Column="column3">
+						<div class="photo-container">
 								<img src="./Images/thumbs/thumbnail_6.png" alt="Sombrero Galaxy"
-									onclick="openModal();currentSlide(6)" class="hover-shadow">
-								<div>
+									 onclick="openModal();currentSlide(6)" class="hover-shadow">
+						</div>
+						<div class="text-overlay">
 									<h3>Click To Enlarge</h3>
 									<p>Introducing The Stellar Symposium...the social institution of today<br>
 										We offer: Noon and Evening Symposiums.<br>
@@ -254,124 +242,108 @@
 								</div>
 							</div>
 						</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 6 -->
-
-				<!-- PHOTO-CONTAINER 7 -->
-				<div class="row">
-					<div class Column="column">
-						<div>
-							<div>
+			<!-- PHOTO-CONTAINER 7 -->
+					<div class="row3">
+						<div class="column1">
+							<div class="photo-container">
 								<img src="./Images/thumbs/thumbnail_7.png" alt="Bubble Nebula"
-									onclick="openModal();currentSlide(7)" class="hover-shadow">
-								<div>
-									<h3>Click To Enlarge</h3>
-									<p>Introducing The Stellar Symposium...the social institution of today<br>
-										We offer: Noon and Evening Symposiums.<br>
-										Feature Exhibit: The Stellar Collection by NASA<br>
-										Reservation Only --- Private Event Booking Available.
-									</p>
-								</div>
+										 onclick="openModal();currentSlide(7)" class="hover-shadow">
 							</div>
-						</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 7 -->
-
+							<div class="text-overlay">
+										<h3>Click To Enlarge</h3>
+										<p>Introducing The Stellar Symposium...the social institution of today<br>
+											We offer: Noon and Evening Symposiums.<br>
+											Feature Exhibit: The Stellar Collection by NASA<br>
+											Reservation Only --- Private Event Booking Available.
+										</p>
+									</div>
+								</div>
 				<!-- PHOTO-CONTAINER 8 -->
-				<div class="row">
-					<div class Column="column">
-						<div>
-							<div>
-								<img src="./Images/thumbs/thumbnail_8.png" alt="Bug Nebula a.k.a Butterfly Nebula"
-									onclick="openModal();currentSlide(8)" class="hover-shadow">
-								<div>
+							<div class="column2">
+								<div class="photo-container">
+										<img src="./Images/thumbs/thumbnail_8.png" alt="Bug Nebula a.k.a Butterfly Nebula"
+											 onclick="openModal();currentSlide(8)" class="hover-shadow">
+								</div>
+								<div class="text-overlay">
 									<h3>Click To Enlarge</h3>
 									<p>Introducing The Stellar Symposium...the social institution of today<br>
-										We offer: Noon and Evening Symposiums.<br>
-										Feature Exhibit: The Stellar Collection by NASA <br>
-										Reservation Only --- Private Event Booking Available.
-									</p>
-								</div>
-							</div>
-						</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 8 -->
-
-
+												We offer: Noon and Evening Symposiums.<br>
+												Feature Exhibit: The Stellar Collection by NASA <br>
+												Reservation Only --- Private Event Booking Available.
+											</p>
+										</div>
+									</div>
 				<!-- PHOTO-CONTAINER 9 -->
-				<div class="row">
-					<div class Column="column">
-						<div>
-							<div>
-								<img src="./Images/thumbs/thumbnail_9.png" alt="Lagoon Nebula"
-									onclick="openModal();currentSlide(9)" class="hover-shadow">
-								<div>
-									<h3>Click To Enlarge</h3>
-									<p>Introducing The Stellar Symposium...the social institution of today<br>
-										We offer: Noon and Evening Symposiums.<br>
-										Feature Exhibit: The Stellar Collection by NASA<br>
-										Reservation Only --- Private Event Booking Available.
-									</p>
-								</div>
-							</div>
-						</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 9 -->
+								<div class="column3">
+									<div class="photo-container">
+											<img src="./Images/thumbs/thumbnail_9.png" alt="Lagoon Nebula"
+												 onclick="openModal();currentSlide(9)" class="hover-shadow">
+									</div>
+									<div class="text-overlay">
+												<h3>Click To Enlarge</h3>
+												<p>Introducing The Stellar Symposium...the social institution of today<br>
+													We offer: Noon and Evening Symposiums.<br>
+													Feature Exhibit: The Stellar Collection by NASA<br>
+													Reservation Only --- Private Event Booking Available.
+												</p>
+											</div>
+										</div>
+									</div>
 				<!-- The Modal/LightBox -->
-				<div id="myModal" class="modal">
-					<span class="close cursor" onclick="colseModal()">&times;</span>
-					<div class="modal-content">
+								<div id="myModal" class="modal">
+									<span class="close cursor" onclick="colseModal()">&times;</span>
+									<div class="modal-content">
 
-						<div class="mySlides">
-							<div class="numbertext">1 / 9</div>
-							<img src="./Images/thumbs/thumbnail_1.png" alt="Veil Nebula Supernova Remnant"
-								style="width:100%">
-						</div>
+										<div class="mySlides">
+											<div class="numbertext">1 / 9</div>
+											<img src="./Images/thumbs/thumbnail_1.png" alt="Veil Nebula Supernova Remnant"
+												 style="width:100%">
+										</div>
 
-						<div class="mySlides">
-							<div class="numbertext">2 / 9</div>
-							<img src="./Images/thumbs/thumbnail_2.png"
-								alt="Arp 273 (part of a galaxy, 300,000,000 light years away)" style="width:100%">
-						</div>
+										<div class="mySlides">
+											<div class="numbertext">2 / 9</div>
+											<img src="./Images/thumbs/thumbnail_2.png"
+												 alt="Arp 273 (part of a galaxy, 300,000,000 light years away)" style="width:100%">
+										</div>
 
-						<div class="mySlides">
-							<img src="./Images/thumbs/thumbnail_3.png" alt="The Cone Nebula" style="width:100%">
-						</div>
+										<div class="mySlides">
+											<img src="./Images/thumbs/thumbnail_3.png" alt="The Cone Nebula" style="width:100%">
+										</div>
 
-						<div class="mySlides">
-							<div class="numbertext">4 / 9</div>
-							<img src="./Images/thumbs/thumbnail_4.png" alt="Pillars of Creation, Eagle Nebula"
-								style="width:100%">
-						</div>
+										<div class="mySlides">
+											<div class="numbertext">4 / 9</div>
+											<img src="./Images/thumbs/thumbnail_4.png" alt="Pillars of Creation, Eagle Nebula"
+												 style="width:100%">
+										</div>
 
-						<div class="mySlides">
-							<div class="numbertext">5 / 9</div>
-							<img src="./Images/thumbs/thumbnail_5.png" alt="The Ring Nebula" style="width:100%">
-						</div>
+										<div class="mySlides">
+											<div class="numbertext">5 / 9</div>
+											<img src="./Images/thumbs/thumbnail_5.png" alt="The Ring Nebula" style="width:100%">
+										</div>
 
-						<div class="mySlides">
-							<div class="numbertext">6 / 9</div>
-							<img src="./Images/thumbs/thumbnail_6.png" alt="Sombrero Galaxy" style="width:100%">
-						</div>
+										<div class="mySlides">
+											<div class="numbertext">6 / 9</div>
+											<img src="./Images/thumbs/thumbnail_6.png" alt="Sombrero Galaxy" style="width:100%">
+										</div>
 
-						<div class="mySlides">
-							<div class="numbertext">7 / 9</div>
-							<img src="./Images/thumbs/thumbnail_7.png" alt="Bubble Nebula" style="width:100%">
-						</div>
+										<div class="mySlides">
+											<div class="numbertext">7 / 9</div>
+											<img src="./Images/thumbs/thumbnail_7.png" alt="Bubble Nebula" style="width:100%">
+										</div>
 
 
-						<div class="mySlides">
-							<div class="numbertext">8 / 9</div>
-							<img src="./Images/thumbs/thumbnail_8.png" alt="Bug Nebula a.k.a Butterfly Nebula"
-								style="width:100%">
-						</div>
+										<div class="mySlides">
+											<div class="numbertext">8 / 9</div>
+											<img src="./Images/thumbs/thumbnail_8.png" alt="Bug Nebula a.k.a Butterfly Nebula"
+												 style="width:100%">
+										</div>
 
-						<div class="mySlides">
-							<div class="numbertext">9 / 9</div>
-							<img src="./Images/thumbs/thumbnail_9.png" alt="Lagoon Nebula" style="width:100%">
-						</div>
-					</div>
-				</div>
+										<div class="mySlides">
+											<div class="numbertext">9 / 9</div>
+											<img src="./Images/thumbs/thumbnail_9.png" alt="Lagoon Nebula" style="width:100%">
+										</div>
+									</div>
+								</div>
 	</section>
 
 	<!-- Next /Previous Controls -->
@@ -385,24 +357,24 @@
 
 	<!-- Thumbnail Image Controls -->
 	<div class="column">
-		<img class="demo"  src="./Images/thumbs/thumbnail_1.png" alt="Veil Nebula Supernova Remnant" onclick="currentSlide(1)" >
+		<img class="demo" src="./Images/thumbs/thumbnail_1.png" alt="Veil Nebula Supernova Remnant" onclick="currentSlide(1)">
 	</div>
 
 	<div class="column">
 		<img class="demo" src="./Images/thumbs/thumbnail_2.png"
-		alt="Arp 273 (part of a galaxy, 300,000,000 light years away)" onclick="currentSlide(2)">
+			 alt="Arp 273 (part of a galaxy, 300,000,000 light years away)" onclick="currentSlide(2)">
 	</div>
 
 	<div class="column">
-		<img class="demo"  onclic src="./Images/thumbs/thumbnail_3.png" alt="The Cone Nebula" onclick="currentSlide(3)" >
+		<img class="demo" onclic src="./Images/thumbs/thumbnail_3.png" alt="The Cone Nebula" onclick="currentSlide(3)">
 	</div>
 
 	<div class="column">
-		<img class="demo"src="./Images/thumbs/thumbnail_4.png" alt="Pillars of Creation, Eagle Nebula" onclick="currentSlide(4)">
+		<img class="demo" src="./Images/thumbs/thumbnail_4.png" alt="Pillars of Creation, Eagle Nebula" onclick="currentSlide(4)">
 	</div>
 
 	<div class="column">
-		<img class="demo" src="./Images/thumbs/thumbnail_5.png" alt="The Ring Nebula"  onclick="currentSlide(5)">
+		<img class="demo" src="./Images/thumbs/thumbnail_5.png" alt="The Ring Nebula" onclick="currentSlide(5)">
 	</div>
 
 	<div class="column">
@@ -410,11 +382,11 @@
 	</div>
 
 	<div class="column">
-		<img class="demo"src="./Images/thumbs/thumbnail_7.png" alt="Bubble Nebula" onclick="currentSlide(7)">
+		<img class="demo" src="./Images/thumbs/thumbnail_7.png" alt="Bubble Nebula" onclick="currentSlide(7)">
 	</div>
 
 	<div class="column">
-		<img class="demo"src="./Images/thumbs/thumbnail_8.png" alt="Bug Nebula a.k.a Butterfly Nebula" onclick="currentSlide(8)">
+		<img class="demo" src="./Images/thumbs/thumbnail_8.png" alt="Bug Nebula a.k.a Butterfly Nebula" onclick="currentSlide(8)">
 	</div>
 
 	<div class="column">
@@ -441,8 +413,8 @@
 			</p>
 
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/WSG0MnmUsEY" frameborder="0"
-				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen></iframe>
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
 		</div>
 	</section>
 	<!-- End Video -->
@@ -496,6 +468,6 @@
 		</div>
 	</section <!-- End Footer -->
 
-</body>
+	</body>
 
 </html>
