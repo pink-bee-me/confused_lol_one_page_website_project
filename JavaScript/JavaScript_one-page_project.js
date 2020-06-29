@@ -35,11 +35,11 @@ function closeModal() {
 }
 
 var slideIndex=1;
-showSlides (slideIndex);
+showSlides(slideIndex);
 
 //Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function plusSlide(n) {
+    showSlides(slideIndex += 1)
 }
 
 // Thumbnail Image Controls
@@ -50,12 +50,12 @@ function currentSlide(n) {
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementById("demo");
+    var dots = document.getElementsByClassName("demo");
     var captionText = document.getElementById("caption");
-    if (n > slides.length){ slideIndex = 1 }
-    if (n < 1) { slidesIndex = slides.length}
+    if (n > slides.length){ slideIndex = i }
+    if (n < 1) { slideIndex = slides.length}
     for (i = 0; 1< slides.length; i++) {
-        slides[i]style.display="none";
+        slides[i].styles.display="hidden";
     }
     for (i=0;i<dots.length;i++) {
         dots[i].className = dots[i].className.replace(" active", "");

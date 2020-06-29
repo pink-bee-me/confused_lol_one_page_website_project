@@ -4,6 +4,35 @@ body {
     color:peachpuff;
 }
 
+.Navigation{
+    position:fixed;
+    top:0;
+    Left:0;
+    width:100%;
+    height:7%;
+    background-color:black; 
+    z-index: 1000000;
+}
+
+a {
+    position:relative;
+    display:block;
+    top:0;
+    left:0;
+    float:left;
+    padding:1%;
+    font-size: 1.25rem;
+    font-weight:bold;
+    justify-content: center;
+    background-color:black;
+    color:white;
+}
+
+a.active {
+    color:white;
+    background-color:orchid;
+}
+
 
 .grid {
     display: grid;
@@ -15,7 +44,7 @@ body {
     max-width:800px;
     height: 100vh;
     background-color:rgb(39, 33, 77);
-   
+   margin-bottom:5%;
 }
 
 
@@ -26,6 +55,10 @@ body {
     cursor: pointer;
 }
 
+#Gallery {
+    margin-bottom: 3%;
+}
+
 #lightbox {
     position:fixed;
     z-index:10000;
@@ -34,6 +67,7 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, .80);
     display: none;
+  
 }
 
 #lightbox.active {
@@ -50,7 +84,10 @@ body {
     border: 2px solid white;
 }
 
-
+#Modul-LightBox-2 {
+    z-index:1;
+    margin-bottom:3%;
+}
 /* This is The Modal LightBox Set #2 */
 .thumb {
     width:300px;
@@ -58,16 +95,22 @@ body {
 }
 
 .mySLides {
-   max-width:900;
+   max-width:90%;
     height:auto;
 }
 
 .row {
+    position:relative;
+    top: 25%;
+    left:3%;
     width:100%;
-    height:250px;
+    height:225px;
 }
 .row >.column { /* selects all elements in class= "column" where the parent element is class="row" */
     padding:0 8px;
+    position:relative;
+    width: 30%;
+    height:auto;
 }
 
 .row:after {/* insert something after the content with class="row" */
@@ -78,14 +121,17 @@ body {
 /* create three equal columns that float next to each other*/
 .column {
     float:left;
-    width:33.3%;
+    width:30%;
 }
 
 /* The Modal Backgroud*/
-.modalToo {
+
+
+
+#myModal {
     display:none; /* modal is always there but not always visible ( it's hidden)*/
     position:fixed; /* the position will not move it is always in the same place reguardless of other html elements */
-    z-index:1; /* modal background is behind the content*/
+    z-index:2; /* modal background is behind the content*/
     padding-top:100px;
     left:0;
     top:0;
@@ -93,18 +139,20 @@ body {
     height:100%;
     overflow:auto;
     background-color:black;
+    
 }
 
 /*Moodal Content*/
 .modal-content {
     position:relative; /* position is relative to the parent element*/
-    background-color:#fefefe;
+    background-color:rgba(0,0,0,0.8);
     margin:auto; /* center content */
     padding:0;
     width:90%; /*width does NOT include padding or margins (% is the percentage of containing block)*/
-    max-width:1200px; /* sets the max-width of an element or black and if the element is
+    max-width:1200px; /* sets the max-width of an element or block and if the element is
                          larger then it will auto adjust the height*/
-}
+    z-index:inherit;                    
+                        }
 
 /* The Close Button */
 .close {
@@ -155,11 +203,6 @@ body {
 }
 
 /* position the "next button" to the right */
-.next {
-
-    right:0;
-    border-radius: 3px 0 0 3px;
-}
 
 /*on hover, add a black background color with a little bit see-through */
 .prev:hover,
@@ -188,7 +231,7 @@ img.demo {
     opacity:0.6;
 }
 
-.demo-cont img {
+.demo-container img{
     width:100%;
 
 }
