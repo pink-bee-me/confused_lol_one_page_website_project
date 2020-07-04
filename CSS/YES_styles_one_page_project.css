@@ -1,22 +1,19 @@
 body {
-    position:fixed;
-    top:0;
-    left:0;
     margin:0px;
     background:rgb(17, 17, 19);
     color:peachpuff;
 }
 
- section#Home {
+#Home {
     position:absolute;
-     top:0;
+    top:0;
     left:0;
-    margin:0;
+    margin-top:0px;
     width:100%;
     height:600px;
 }
 
-div.NavBar{
+.Navigation{
     position:fixed;
     top:0;
     left:0;
@@ -25,15 +22,12 @@ div.NavBar{
     background-color:black; 
     z-index: 1000000;
     color:white;
-    font-size:1.25em;
+    font-size:1.5em;
     font-weight:bold;
-}
+  }
 
-.NavBar > a {
-    position:relative;
+.Navigation > a  {
     display:block;
-    top:0;
-    left:0;
     float:left;
     padding:1%;
     font-size: 1.25rem;
@@ -48,25 +42,42 @@ a.active {
     background-color:rgb(224, 35, 218);
 }
 
-#Home > div.intro,
-.introText,
- .photo-container ,
- .photo-container > img {
-     position:relative;
-    top:0;
-    left:0;
+#introImage  {
+  position:relative;
     width:100%;
 }
 
-.introText h1 {
-    margin-top:15%;
+#introImage img {
+    position:relative;
+    left:27%;
+}
 
+#About  { 
+    position:relative;
+    padding: 3%;
+}
+
+#About h2 {
+    color:rgb(224, 35, 218);
+}
+
+.introText {
+    position:relative;
+    margin-top:7%;
      z-index:3;
 }
 
+.introText h1 {
+    text-align:center;
+    color:rgb(224, 35, 218);
+}
 
-/*#About {*/
-/*    position:;*/
+#Gallery {
+    padding:3%;
+}
+#galleryIntro {
+    text-align:center;
+}
 
 
 
@@ -95,7 +106,10 @@ a.active {
 }
 
 #Gallery {
+    position:relative;
     margin-bottom: 3%;
+    width:100%;
+    height:1200px;
 }
 
 #lightbox {
@@ -126,6 +140,10 @@ a.active {
 #Modul-LightBox-2 {
     z-index:1;
     margin-bottom:3%;
+}
+
+#Modal-LightBox-2 h2 {
+    text-align:center;
 }
 /* This is The Modal LightBox Set #2 */
 .thumb {
@@ -164,7 +182,12 @@ a.active {
 }
 
 /* The Modal Backgroud*/
-
+#Gallery_2 {
+    position:relative;
+    width:100%;
+    height: 700px;
+    
+}
 
 
 #myModal {
@@ -287,4 +310,92 @@ img.hover-shadow {
 .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+#Video {
+  padding:3%;
+    margin-top: 3%;
+}
 
+ .videoContainer {
+
+position:relative;
+ width: 660px;
+ height:420px;
+ background-color:rgb(48, 57, 110);
+ margin-bottom:2%;
+}
+
+ iframe{
+  position:relative;
+     top:15px;
+     left:27px;
+width: 90%;
+height:90%;
+padding:1%;
+background-color:white;
+
+ }
+.VideoIntro{
+    position:relative;
+    margin-bottom:2%;
+}
+.VideoIntro > h1 {
+    margin-top:10px;
+    color:rgb(224, 35, 218);
+}
+
+.VideoIntro > p {
+    font-size:1.15em;
+}
+
+#Form {
+    position:relative;
+    top:-550px;
+    left:850px;
+}
+
+ input[ type="text"] {
+   font-size:1em;
+    font-weight:400;
+    margin-bottom:1.25%;
+    box-sizing:border-box;
+    border:5px solid rgb(224, 35, 218);
+    border-radius: 4px;
+    width:275px;
+  }
+input[type="email"] {
+    font-size:1em;
+    font-weight:400;
+    margin-bottom:1.25%;
+   box-sizing:border-box;
+    border:5px solid rgb(224, 35, 218);
+    border-radius: 4px;
+    width:555px;
+}
+
+input[type="submit"] {
+    font-size: 1.15em;
+    font-weight:bold;
+    color:white;
+    background-color: rgb(136, 164, 226);
+    border:5px solid rgb(224,35,218);
+}
+
+.newsletter h1 {
+    color:rgb(224, 35, 218);
+}
+
+.newsletter p {
+    color:rgb(136, 164, 226);
+    font-size:1.25em;
+}
+
+#Contact {
+    position:relative;
+    top: -550px;
+}
+.contact {
+    position:relative;
+}
+.contact h2 {
+    color:rgb(224, 35, 218);
+}

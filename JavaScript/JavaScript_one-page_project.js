@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 const lightbox =document.createElement("div")
 lightbox.id = "lightbox"
 document.body.appendChild(lightbox)
@@ -23,6 +30,8 @@ lightbox.addEventListener("click", e =>{ //add an event listener for "click" and
     lightbox.classList.remove("active") //removes the active class which will hide our lightbox again
 })
 
+
+
 // Modal number Two SetUp //
 //Open Modal
 function openModal() {
@@ -38,8 +47,8 @@ var slideIndex=1;
 showSlides(slideIndex);
 
 //Next/previous controls
-function plusSlide(n) {
-    showSlides(slideIndex += 1)
+function plusSlides(n) {
+    showSlides(slideIndex += n)
 }
 
 // Thumbnail Image Controls
@@ -52,16 +61,16 @@ function showSlides(n) {
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("demo");
     var captionText = document.getElementById("caption");
-    if (n > slides.length){ slideIndex = i }
+    if (n > slides.length){ slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length}
-    for (i = 0; 1< slides.length; i++) {
-        slides[i].styles.display="hidden";
+    for (i = 0; i< slides.length; i++) {
+        slides[i].style.display="none";
     }
-    for (i=0;i<dots.length;i++) {
+    for (i  =0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
+    slides[ slideIndex-1 ].style.display = "block";
+    dots[ slideIndex-1 ].className += " active";
+    captionText.innerHTML = dots[ slideIndex-1 ].alt;
     }
 
