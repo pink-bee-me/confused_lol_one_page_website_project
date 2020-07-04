@@ -4,11 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>The Stellar Symposim</title>
-	<link rel="stylesheet" href="./CSS/styles_one_page_project.css">
+	<link rel="stylesheet" href="./CSS/one_page_website.css">
 	<script defer src="./JavaScript/JavaScript_one-page_project.js"></script>
 </head>
 
 <body>
+	<section id="Home">
 	<!-- Navigation Area -->
 	<section id="NavBar">
 		<div class="Navigation">
@@ -16,15 +17,15 @@
 			<a href="#About">About</a>
 			<a href="#Gallery">Gallery</a>
 			<a href="#Video">Video</a>
-			<a href="#Form">Sign Up</a>
-			<a href="#Contact">Contact Us</a>
+			<a href="#Form">Sign-Up</a>
+			<a href="#Contact">Contact</a>
 		</div>
 	</section>
 		<!-- HOME -->
-		<section id="Home">
-			
+	
+		<section id="INTRO-Photo"	
 		<div id="Stellar-Img_Container">
-			<img src="C:\Users\LaurieSue\OneDrive\Desktop\One_Page_Website_Repo\one_page_website_project\versions\One-Page Website\Images\thumbs" alt="Stellar Symposium at Night_11(2).jpg">
+			<img src="./Images/" alt="Stellar Symposium at Night_11(2).jpg">
 			<div class="introTextContainer">
 				<div class="introText">
 				<h1>Introducing The Stellar Symposium...<br></h1>
@@ -104,6 +105,7 @@
 	</section>
 	<!-- Photo Gallery -->
 	<section id="Gallery">
+		<div id="galleryIntro">
 		<h1>Check Out The PHOTO GALLERY !!!</h1>
 		<h2>Featuring:<br>
 			<span style="font-size:1.75em; font-weight:bold; color:magenta;">The Stellar Collection</span><br>
@@ -112,8 +114,9 @@
 			just beyond our frontier...go
 			ahead, take a peek!</i></p>
 		</h2>
-		<center>
+	</div>
 			<div class="grid-image-container">
+				<center>
 				<div class="grid">
 					<img src="./Images/thumbs/thumbnail_1.png">
 					<img src="./Images/thumbs/thumbnail_2.png">
@@ -125,12 +128,12 @@
 					<img src="./Images/thumbs/thumbnail_8a.png">
 					<img src="./Images/thumbs/thumbnail_9ab.png">
 				</div>
+			</center>
 			</div>
-		</center>
+	
 
-	<section id="Modal-LightBox-2"	
+	<div id="Modal-LightBox-2">	
 	<!-- PHOTO-CONTAINER 1 -->
-	<center>
 	<div class="row">
 		<div class="column">
 			<div class="photo-container">
@@ -202,7 +205,7 @@
 
 		<!-- The Modal/LightBox -->
 		<div id="myModal" class="modalToo">
-			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<span class="close cursor" onclick="closeModal()">&times</span>
 			
 				<div class="mySlides">
 					<div class="numbertext">1 / 9</div>

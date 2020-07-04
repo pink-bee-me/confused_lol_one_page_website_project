@@ -1,48 +1,35 @@
 body {
-    margin: 0;
+    position:fixed;
+    top:0;
+    left:0;
+    margin:0px;
     background:rgb(17, 17, 19);
     color:peachpuff;
 }
 
-#Stellar-Img_Container {
-    position:relative;
-    top:0;
-    left:0;
-    width: 100%;
-    height:auto;
-    z-index:-1;
-}
-
-#Stellar-Img_Container img {
-    position:relative;
-    width:100%;
-    height:auto;
-}
-
-.introTextContainer {
-    position:relative;
-    top:0;
-    left:0;
-    color:peachpuff;
-    z-index: 2;
-
-.introText {
+ section#Home {
     position:absolute;
-
+     top:0;
+    left:0;
+    margin:0;
+    width:100%;
+    height:600px;
 }
 
-
-.Navigation{
+div.NavBar{
     position:fixed;
     top:0;
-    Left:0;
+    left:0;
     width:100%;
-    height:7%;
+    height:6%;
     background-color:black; 
     z-index: 1000000;
+    color:white;
+    font-size:1.25em;
+    font-weight:bold;
 }
 
-a {
+.NavBar > a {
     position:relative;
     display:block;
     top:0;
@@ -58,13 +45,23 @@ a {
 
 a.active {
     color:white;
-    background-color:orchid;
+    background-color:rgb(224, 35, 218);
 }
 
-.introTextOverlay h1 p {
-    position:relative;
-    top:15%;
-    left:15%;
+#Home > div.intro,
+.introText,
+ .photo-container ,
+ .photo-container > img {
+     position:relative;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+.introText h1 {
+    margin-top:15%;
+
+     z-index:3;
 }
 
 
