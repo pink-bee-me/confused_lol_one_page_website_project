@@ -21,7 +21,7 @@ body {
     height:6%;
     background-color:black; 
     z-index: 1000000;
-    color:white;
+    color:rgb(255, 255, 255);
     font-size:1.5em;
     font-weight:bold;
   }
@@ -34,7 +34,7 @@ body {
     font-weight:bold;
     justify-content: center;
     background-color:black;
-    color:white;
+    color:peachpuff;
 }
 
 a.active {
