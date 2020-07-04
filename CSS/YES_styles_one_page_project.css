@@ -37,6 +37,10 @@ body {
     color:peachpuff;
 }
 
+ a:hover {
+    color:rgb(224, 35, 218);
+    background-color:peachpuff;
+}
 a.active {
     color:white;
     background-color:rgb(224, 35, 218);
@@ -104,8 +108,8 @@ a.active {
     height: 200px;
     cursor: pointer;
 }
-
-#Gallery {
+#Gallery_1,
+#Gallery_2 {
     position:relative;
     margin-bottom: 3%;
     width:100%;
@@ -162,12 +166,24 @@ a.active {
     left:3%;
     width:100%;
     height:225px;
+    padding:8px;
 }
 .row >.column { /* selects all elements in class= "column" where the parent element is class="row" */
-    padding:0 8px;
+    padding: 8px;
     position:relative;
     width: 30%;
-    height:auto;
+    height:100%;
+}
+.column > .photo-containerMLB {
+  position:relative;
+    width: 100%;
+    height:100%;
+}
+
+.photo-containerMLB > img {
+    position:relative;
+    width:100%;
+    height:100%;
 }
 
 .row:after {/* insert something after the content with class="row" */
