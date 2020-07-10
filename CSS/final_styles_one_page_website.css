@@ -1,0 +1,536 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0px;
+    background: rgb(17, 17, 19);
+    color: rgb(238, 233, 229);
+}
+
+#Home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+    width: 100%;
+    height: 600px;
+}
+
+.Navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6%;
+    background-color: black;
+    z-index: 1000000;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.Navigation>a {
+    display: block;
+    float: left;
+    padding: 1%;
+    font-size: 1.25rem;
+    font-weight: bold;
+    justify-content: center;
+    background-color: black;
+    color:rgb(6, 253, 253);
+}
+
+a:hover {
+    color: darkorchid;
+    background-color: peachpuff;
+}
+
+a.active {
+    color:rgb(6, 253, 253);
+    background-color: rgb(167, 34, 162);
+}
+
+ a.active:hover {
+     color:rgb(247, 234, 222);
+     background-color:darkorchid;
+}
+
+.introText {
+    position: relative;
+    margin-top: 7%;
+    z-index: 3;
+}
+
+.introText h1 {
+    position:relative;
+    left:17.75%;
+    text-align: center;
+    color: rgb(224, 35, 218);
+    text-shadow: 1.5px 1.5px 1.5px white;
+    font-size: 3em;
+    border: 7px dashed rgb(255, 255, 255); 
+    width:65%;
+}
+
+#introImage {
+    position: relative;
+    top: 5%;
+    left: 17.75%;
+    width: 65%;
+    height: 85%;
+    background-color: rgb(6, 253, 253);
+    border: 5px solid orchid;
+}
+
+#introImage img {
+    position: relative;
+    top: 7.5%;
+    left: 5%;
+    width: 90%;
+    height: 85%;
+    border: 5px solid rgb(224, 35, 218);
+}
+
+#About {
+    position: relative;
+    padding: 3%;
+}
+
+#About h2 {
+    color: rgb(224, 35, 218);
+    text-shadow: 1.5px 1.5px 1.5px peachpuff;
+    font-size: 2.5em
+}
+
+#About .define {
+    font-size: 1.25em;
+}
+
+#About .define h3 {
+    color: rgb(6, 253, 253);
+    text-shadow: 1.5px 1.5px 1.5px orchid;
+}
+
+#About .define dt {
+    color: orchid;
+}
+
+#About .define h4 {
+    color: rgb(6, 253, 253);
+    text-shadow: 1.5px 1.5px 1.5px orchid;
+    margin-bottom: .5%;
+}
+
+#About .define p {
+    color: orchid;
+}
+
+/* This is The Modal LightBox Set #2 */
+.thumb {
+    width: 300px;
+    height: 200px;
+}
+
+.mySlides {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.row {
+    position: relative;
+    top: 25%;
+    left: 3%;
+    width: 100%;
+    height: 225px;
+    padding: 8px;
+}
+
+.row:after {
+    /* insert something after the content with class="row" */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* create three equal columns that float next to each other*/
+.row>.column {
+
+    float: left;
+    width: 29%;
+    padding: .5%;
+}
+
+.column>img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* The Modal Backgroud*/
+#Gallery_2 {
+    position: relative;
+    top: 0;
+    left:5%;
+    width: 90vw;
+    height: auto;
+    background-color: rgb(17, 17, 19);
+    border: 5px dashed rgb(255, 255, 255);
+}
+
+#Gallery_2 .holder {
+    position: relative;
+    top: 20%;
+    left: 5.95%;
+    width: 90%;
+    height: 90%;
+    padding: 2%;
+
+}
+
+#Gallery_2 .holder > h2 {
+    position: relative;
+    color:orchid;
+    text-shadow: 2px 2px 2px rgb(6, 253, 253); 
+    font-size: 3em;
+    text-align: center;
+    margin: .25% 0 1.5% 0;
+}
+
+#Gallery_2 .holder img {
+    border: .25em solid rgb(6, 253, 253) ;
+    padding:2%;
+}
+
+#myModal {
+    display: none;
+    /* modal is always there but not always visible ( it's hidden)*/
+    position: fixed;
+    /* the position will not move it is always in the same place reguardless of other html elements */
+    z-index: 1;
+    /* modal background is behind the content*/
+    padding-top: 100px;
+    left: 0;
+    /* top:-724px; */
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/*Modal Content*/
+.modal-content {
+    position: relative;
+    /* position is relative to the parent element*/
+    background-color: darkorchid;
+    margin: 0 auto;
+    /* center content */
+    padding: 0;
+    width: 100%;
+    /*width does NOT include padding or margins (% is the percentage of containing block)*/
+
+}
+
+.photo-container {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    padding: .5%;
+}
+
+.photo-container>img {
+    width: 100%;
+    border: 3px solid white;
+}
+
+/* The Close Button */
+.close {
+    position: relative;
+    color: white;
+    /* position:absolute; with absolute positioning , an element can be placed anywhere on a page ( this is done with top; left; bottom; right) */
+    top: 10px;
+    left: 88%;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    /* focus: behavior when the user hovers over the close button (what happens when the close button is clicked  */
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/*next & Previous Buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: relative;
+    bottom: 50%;
+    right: -46.5%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25em;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.numbertext {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    top: 100;
+    left: 50%;
+}
+
+/* position the "next button" to the right */
+
+/*on hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+/*number text (1/3 etc) */
+
+
+
+/* Caption Text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    width: 85%;
+    opacity: 0.6;
+}
+
+.modImg img {
+    margin-bottom: -4px;
+
+
+}
+
+.demo-container {
+    display: none;
+}
+
+.demo-container img {
+    widows: 90%;
+    padding: 5%;
+
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#Video {
+    position: relative;
+    padding:1% 3% 3% 3%;
+    margin-top: 3%;
+    width: 70%;
+}
+
+.videoContainer {
+    position: relative;
+
+    width: 72%;
+    height: 55vh;
+    background-color: rgb(220, 141, 240);
+    margin-bottom: 2%;
+}
+
+.videoContainer > iframe {
+    position:absolute;
+    top:7%;
+    left:5%;
+    width: 90%;
+    height: 85%;
+    padding: 2%;
+    background-color: white;
+
+}
+
+.VideoIntro {
+    position: relative;
+    margin-bottom: 2%;
+}
+
+.VideoIntro > h1 {
+    font-size:2.10em;
+    margin-top: 2% 1%;
+    width:72%;
+    color: rgb(224, 35, 218);
+    padding:2%;
+    text-shadow:1.75px 1.75px 1.75px rgb(6, 253, 253);
+    border: 5px dashed peachpuff;
+   
+}
+
+.VideoIntro > p {
+    font-size: 1.5em;
+    color: rgb(6, 253, 253);
+    text-shadow:1.75px 1.75px 1.75px rgb(220,141,240);
+}
+
+.videoContainer > p {
+    position: relative;
+    bottom:-95%;
+    font-size: 1.25em;
+    color: rgb(6, 253, 253);
+    text-shadow:1.5px 1.5px 1.5px orchid;
+border:5px dashed rgb(240, 229, 221);
+padding:1.25%;
+text-align:center;
+}
+
+#Form {
+    position: relative;
+    top: -157%;
+    left: 800px;
+    padding: 0 3%;
+}
+
+#Form h1 {
+    font-size:4em;
+    padding:3%;
+    width:47%;
+    color:rgb(6, 253, 253);
+    text-shadow:2.5px 2.5px 2.5px magenta;
+    border:5px dashed peachpuff;
+    text-align:center;
+    margin-bottom:1%;
+}
+
+ .newsletter > h3 {
+     position:relative;
+     color:orchid;
+     font-size: 1.9em;
+     font-variant:small-caps;
+     left:3.3%;
+     margin:0  auto;
+}
+
+ .blip {
+        position:relative;
+        color: rgb(109, 158, 250);
+        font-size: 1.25em;
+        text-align:center;
+        left:-25%;
+ }
+
+ form {
+     position:relative;
+     padding:0 7%;
+ }
+
+ input[ type="text"] {
+     text-align:center;
+    font-size: 1em;
+    font-weight: 600;
+    padding:.5%;
+    margin-bottom: 1.25%;
+    box-sizing: border-box;
+    border: 5px solid rgb(224, 35, 218);
+    border-radius: 4px;
+    width: 40%;
+
+}
+
+input[type="email"] {
+    text-align:center;
+    font-size: 1em;
+    font-weight: 600;
+    padding:.5%;
+    margin-bottom: 1.25%;
+    box-sizing: border-box;
+    border: 5px solid rgb(224, 35, 218);
+    border-radius: 4px;
+    width: 40%;
+}
+
+input[type="submit"] {
+    position:relative;
+    left: 15%;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(109, 158, 250);
+    border: 5px solid rgb(224, 35, 218);
+    padding:.5%;
+    width:10%;
+}
+
+.form-spacer {
+    text-align:center;
+    margin-top:1.3%;
+    position:relative;
+    left: -29%;
+    font-size:1.07em;
+    font-weight:bold;
+
+}
+
+
+#Contact {
+    position: relative;
+    bottom:181%;
+    padding: 3% 3% 3% 3%;
+}
+
+#Contact h2 {
+    color: rgb(224, 35, 218);
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+#Contact p {
+    font-size: 1.5em;
+}
+
+
+.row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row>.col {
+    padding: 0 8px;
+}
+
+.col {
+    float: left;
+    width: 25%;
+}
